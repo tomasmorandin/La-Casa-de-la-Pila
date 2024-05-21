@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="./img/web_LOGO AZUL.png" type="image/x-icon">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <title>La Casa de la Pila - Ventas al por mayor y menor</title>
+</head>
+<body>
+
+<!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img src="./img/web_LOGO BLANCO.png" alt="Logo empresa"></a>
+          <form class="d-flex">
+            <input class="form-control me-2" type="text" placeholder="Buscar">
+            <button class="btn" type="button"><img src="./img/buscar.png" alt=""></button>
+          </form>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="mynavbar">
+            <ul class="navbar-nav me-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="javascript:void(0)">Productos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="javascript:void(0)">Servicios</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="javascript:void(0)">Ofertas</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="javascript:void(0)">Contactenos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="javascript:void(0)"><img src="./img/bolsa de compras.png" alt=""></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="javascript:void(0)"><img src="./img/favoritos.png" alt=""></a>
+              </li>
+            </ul>
+           
+          </div>
+        </div>
+      </nav>
+
+<!-- Swiper -->
+<div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><img src="./img/web_SLIDE 1.jpg" alt=""></div>
+      <div class="swiper-slide"><img src="./img/web_SLIDE 2.jpg" alt=""></div>
+      <div class="swiper-slide"><img src="./img/web_SLIDE 3.jpg" alt=""></div>
+      <div class="swiper-slide"><img src="./img/web_SLIDE 4.jpg" alt=""></div>
+    </div>
+
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-pagination"></div>
+
+    <div class="autoplay-progress">
+      <svg viewBox="0 0 48 48">
+        <circle cx="24" cy="24" r="20"></circle>
+      </svg>
+      <span></span>
+    </div>
+    
+</div>
+
+<!-- Servicios -->
+<article class="container-fluid text-center">
+    <div class="row">
+        <div class="col-sm-6 col-lg-3 servicio">
+            <h3><img src="./img/envio.gif" alt="">  Envío gratis a domicilio</h3>
+        </div>
+        <div class="col-sm-6 col-lg-3 servicio">
+            <h3><img src="./img/24hs.gif" alt="">  Stock disponible 24 hs</h3>
+        </div>
+        <div class="col-sm-6 col-lg-3 servicio">
+            <h3><img src="./img/precios bajos.gif" alt="">  Precios bajos garantizados</h3>
+        </div>
+        <div class="col-sm-6 col-lg-3 servicio">
+            <h3><img src="./img/devolucion.gif" alt="">  Devoluciones sin cargo</h3>
+        </div>
+    </div>
+</article>
+
+<!-- Swiper cards CATEGORIA PRODUCTOS -->
+<article class="article">
+    <h3 class="text-center">PRODUCTOS</h3> 
+    <div class="swiper-container" data-aos="fade-up" data-aos-duration="3000">
+        <div class="swiper-wrapper">
+<!-- Card-1 -->   
+<div class="swiper-slide shadow-sm mb-5 bg-body rounded text-start">
+    <img class="img-fluid card-img-top" src="./img/web_CATEGORIA 1.jpg" alt="Producto 1">
+    <div class="card-body">
+        <p class="card-text1">Pilas comunes</p>
+        <p class="card-text2">Alcalinas, alcalinas especiales, carbón y litio</p>
+        <a href="#" class="btn text-decoration-none">Ver más</a>
+    </div>
+</div>
+<!-- Card-2 -->    
+<div class="swiper-slide shadow-sm mb-5 bg-body rounded text-start">
+    <img class="img-fluid card-img-top" src="./img/web_CATEGORIA 2.jpg" alt="Producto 2">
+    <div class="card-body">
+        <p class="card-text1">Pilas especiales</p>
+        <p class="card-text2">Litio Cilindrico Recargable, Niquel Cadmio Ni-Cd, Niquel Metal Ni-Mh, Litio Cilindrico No, Litio Cilindrico No recargable</p>
+        <a href="#" class="btn text-decoration-none">Ver más</a>
+    </div>
+</div>
+<!-- Card-3 -->    
+<div class="swiper-slide shadow-sm mb-5 bg-body rounded text-start">
+    <img class="img-fluid card-img-top" src="./img/web_CATEGORIA 3.jpg" alt="Producto 3">
+    <div class="card-body">
+        <p class="card-text1">Baterias para notebook y tablets</p>
+        <p class="card-text2">HP / COMPAQ, ACER, DELL, ASUS, APPLE, BANGHO, IBM, LENOVO, LG, MSI, OLIVETTI, SAMSUNG, TOSHIBA, SONY, Benq</p>
+        <a href="#" class="btn text-decoration-none">Ver más</a>
+    </div>
+</div>
+<!-- Card-4 -->    
+<div class="swiper-slide shadow-sm mb-5 bg-body rounded text-start">
+    <img class="img-fluid card-img-top" src="./img/web_CATEGORIA 4.jpg" alt="Producto 4">
+    <div class="card-body">
+        <p class="card-text1">Cartuchos de tinta</p>
+        <p class="card-text2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est, dolore?</p>
+        <a href="#" class="btn text-decoration-none">Ver más</a>
+    </div>
+</div>
+<!-- Card-5 -->    
+<div class="swiper-slide shadow-sm mb-5 bg-body rounded text-start">
+    <img class="img-fluid card-img-top" src="./img/web_CATEGORIA 5.jpg" alt="Producto 5">
+    <div class="card-body">
+        <p class="card-text1">Handies</p>
+        <p class="card-text2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est, dolore?</p>
+        <a href="#" class="btn text-decoration-none">Ver más</a>
+    </div>
+</div>
+<!-- Card-6 -->    
+<div class="swiper-slide shadow-sm mb-5 bg-body rounded text-start">
+    <img class="img-fluid card-img-top" src="./img/web_OFERTA 1.jpg" alt="Producto 6">
+    <div class="card-body">
+        <p class="card-text1">Controles remotos</p>
+        <p class="card-text2">Control TV común, Control LCD, Control LCD Smart, Control DirecTV, Controles Aire Acondicionado, Sintonizadores, Universales TV Y LCD, Organizador de Remotos, Home y Blu Ray,Audio Auto estereos, Alarmas y Portones COPIA, Control DVD, Fundas y soportes</p>
+        <a href="#" class="btn text-decoration-none">Ver más</a>
+    </div>
+</div>
+</div>
+<!-- Add Pagination -->
+<div class="swiper-pagination"></div>
+<!-- Add Arrows -->
+<div class="swiper-button-next"></div>
+<div class="swiper-button-prev"></div>
+</div>
+</article>
+
+<!-- Swiper cards OFERTAS -->
+<article class="article">
+    <h3 class="text-center">OFERTAS</h3> 
+    <div class="swiper-container" data-aos="fade-up" data-aos-duration="3000">
+        <div class="swiper-wrapper">
+<!-- Card-1 -->   
+<div class="swiper-slide shadow-sm mb-5 bg-body rounded text-start">
+    <img class="img-fluid card-img-top" src="./img/web_OFERTA 1.jpg" alt="Oferta 1">
+    <div class="card-body">
+        <p class="card-text1">Controles Remotos</p>
+        <p class="card-text2">Controles remotos Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est, dolore?</p>
+        <p class="card-text2">$12.000</p>
+        <a href="#" class="btn text-decoration-none">Comprar</a>
+    </div>
+</div>
+<!-- Card-2 -->    
+<div class="swiper-slide shadow-sm mb-5 bg-body rounded text-start">
+    <img class="img-fluid card-img-top" src="./img/web_OFERTA 2.jpg" alt="Oferta 1">
+    <div class="card-body">
+        <p class="card-text1">Plias AA pack 4u</p>
+        <p class="card-text2">Controles remotos Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est, dolore?</p>
+        <p class="card-text2">$5.000</p>
+        <a href="#" class="btn text-decoration-none">Comprar</a>
+    </div>
+</div>
+<!-- Card-3 -->    
+<div class="swiper-slide shadow-sm mb-5 bg-body rounded text-start">
+    <img class="img-fluid card-img-top" src="./img/web_OFERTA 3.jpg" alt="Oferta 3">
+    <div class="card-body">
+        <p class="card-text1">Plias para relojes y mini controles</p>
+        <p class="card-text2">Controles remotos Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est, dolore?</p>
+        <p class="card-text2">$4.000</p>
+        <a href="#" class="btn text-decoration-none">Comprar</a>
+    </div>
+</div>
+<!-- Card-4 -->    
+<div class="swiper-slide shadow-sm mb-5 bg-body rounded text-start">
+    <img class="img-fluid card-img-top" src="./img/web_OFERTA 4.jpg" alt="Oferta 4">
+    <div class="card-body">
+        <p class="card-text1">Baterias para alarmas</p>
+        <p class="card-text2">Controles remotos Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est, dolore?</p>
+        <p class="card-text2">$25.000</p>
+        <a href="#" class="btn text-decoration-none">Comprar</a>
+    </div>
+</div>
+<!-- Card-5 -->    
+<div class="swiper-slide shadow-sm mb-5 bg-body rounded text-start">
+    <img class="img-fluid card-img-top" src="./img/web_OFERTA 5.jpg" alt="Oferta 5">
+    <div class="card-body">
+        <p class="card-text1">DURACELL ALCALINA A9VDU 9V X1</p>
+        <p class="card-text2">Controles remotos Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est, dolore?</p>
+        <p class="card-text2">$10.000</p>
+        <a href="#" class="btn text-decoration-none">Comprar</a>
+    </div>
+</div>
+<!-- Card-6 -->    
+<div class="swiper-slide shadow-sm mb-5 bg-body rounded text-start">
+    <img class="img-fluid card-img-top" src="./img/web_OFERTA 6.jpg" alt="Oferta 6">
+    <div class="card-body">
+        <p class="card-text1">Pilas recargables</p>
+        <p class="card-text2">Controles remotos Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est, dolore?</p>
+        <p class="card-text2">$8.000</p>
+        <a href="#" class="btn text-decoration-none">Comprar</a>
+    </div>
+</div>
+</div>
+<!-- Add Pagination -->
+<div class="swiper-pagination"></div>
+<!-- Add Arrows -->
+<div class="swiper-button-next"></div>
+<div class="swiper-button-prev"></div>
+</div>
+</article>
+
+<!-- Footer -->
+<footer>
+    <div class="text-center">
+        <h2>CONTACTENOS</h2>
+        <img src="./img/footer/2 Noah.png" alt=""></div>
+
+    <div class="container-fluid text-center">
+        <div class="row">
+            <div class="col-sm-4">
+                <form action="enviar.php" method="post" enctype="text/plain">
+
+                    <input type="text" required placeholder="Nombre y Apellido*" required>
+                    <label for=""></label>
+        
+                    <input type="email" required placeholder="Email*" required>
+                    <label for=""></label>
+    
+                    <textarea name="" id="textarea" cols="40" rows="10" placeholder="Tu mensaje..*"></textarea> 
+                    <label for=""></label>
+        
+                    <input type="reset" value="Borrar">
+                    <input type="submit" value="Enviar">
+                    
+                </form>
+            </div>
+            <div class="col-sm-4 text-center">
+                <h3>PEDIDOS A DOMICILIO</h3>
+                <p>Monte Caseros 295, Paraná, Entre Ríos. CP 3100
+                0343 4079 400
+                +54 9 343 480 6723 
+                ventaslacasadelapila@gmail.com 
+                REDES @lacasadelapila
+                </p>
+                <button type="button" class="btn"><a class="text-decoration-none text-white" href="#">Solicitud</a></button>
+            </div>
+        
+            <div class="col-sm-4 text-center webs">
+                <a href="#"><img src="./img/me gusta.png" alt="Seguinos"></a>
+                <h3>SEGUINOS</h3>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+            </div>
+        </div>
+    </div>
+            <div class="text-center thanks">
+                <h3>GRACIAS!</h3>
+                <img src="./img/web_LOGO AZUL.png" alt="Logo La Casa de la Pila">
+            </div>
+            <div class="text-center footer1">
+                <ul>
+                    <li><a href="#" class="text-decoration-none">Inicio</a></li>
+                    <li><a href="#" class="text-decoration-none">Productos</a></li>
+                    <li><a href="#" class="text-decoration-none">Servicios</a></li>
+                    <li><a href="#" class="text-decoration-none">Ofertas</a></li>
+                    <li><a href="#" class="text-decoration-none">Contactenos</a></li>
+                </ul>
+            </div>
+</footer>
+
+<!-- END -->
+
+
+<!-- Initialize Boostrap -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+
+<!-- Aos JS -->  
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<!-- Wow JS -->    
+    <script src="js/wow.min.js"></script>
+
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<script src="js/script.js"></script>
+
+
+</body>
+</html>
