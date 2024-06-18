@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./styles/styles.css">
+    <title>La Casa de la Pila - Contacto</title>
+</head>
+<body>
+    <header></header>
+    <main id="mainContacto">
+        <h1>Contacto</h1>
+
+        <form id="form" action="enviar.php" method="post" enctype="text/plain">
+
+            <input id="nombreForm" class="input" type="text" required placeholder="Nombre y Apellido" required>
+            <label for="nombreForm"></label>
+
+            <input id="correoForm" class="input" type="email" required placeholder="Correo electrónico" required>
+            <label for="correoForm"></label>
+
+            <input id="telefonoForm" class="input" type="number" required placeholder="Telefono" required>
+            <label for="telefonoForm"></label>
+
+            <textarea id="mensajeForm" name="" id="textarea" cols="40" rows="8" placeholder="Mensaje"></textarea> 
+            <label for="mensajeForm"></label>
+
+            <input id="boton" type="submit" value="Enviar">
+        </form>
+    </main>
+    <footer></footer>
+    <script src="js/contacto.js"></script>
+    <script src="js/navegacion.js"></script>
+
+    <!-- Initialize Boostrap -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+</body>
+</html>
