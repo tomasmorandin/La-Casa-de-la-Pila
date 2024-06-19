@@ -78,7 +78,7 @@ const msjError = document.getElementById('msj_error');
 msjError.style.color = 'red';
 
 function enviarMsjError(productoCodigo){
-    msjError.innerHTML = `<p>Producto con ID: ${productoCodigo} no encontrado</p>`;    
+    msjError.innerHTML = `<p>Producto con código: ${productoCodigo} no encontrado</p>`;    
 }
 
 function agregarAlCarrito(productoCodigo, cantidad){
@@ -148,6 +148,7 @@ function traerDeLocalStorage(){
 document.addEventListener('DOMContentLoaded', () => {
     renderProducto();
     renderCarrito();
+    agregarAlCarrito(999, 1);
 });
 
 

@@ -67,26 +67,35 @@ const PilasComunesAlcalinas = [
     tituloH2.style.textAlign = 'center'
     tituloH2.style.paddingTop = '20px'
     tituloH2.style.paddingBottom = '20px'
+    tituloH2.style.fontSize = '30px'
         
     //Agrego un h3//
     subtitle1.innerText = "BATERIAS CELULARES";
     subtitle1.style.paddingTop = '20px'
     subtitle1.style.paddingBottom = '20px'
+    subtitle1.style.textAlign = 'center'
+    subtitle1.style.fontSize = '25px'
         
     //Agrego un h3//
     subtitle2.innerText = "PILAS COMUNES CARBON";
     subtitle2.style.paddingTop = '20px'
     subtitle2.style.paddingBottom = '20px'
+    subtitle2.style.textAlign = 'center'
+    subtitle2.style.fontSize = '25px'
         
     //Agrego un h3//
     subtitle3.innerText = "PILAS COMUNES ALCALINAS";
     subtitle3.style.paddingTop = '20px'
     subtitle3.style.paddingBottom = '20px'
+    subtitle3.style.textAlign = 'center'
+    subtitle3.style.fontSize = '25px'
         
     //Agrego un h3//
-     subtitle4.innerText = "PILAS RECARGABLES";
+    subtitle4.innerText = "PILAS RECARGABLES";
     subtitle4.style.paddingTop = '20px'
     subtitle4.style.paddingBottom = '20px'
+    subtitle4.style.textAlign = 'center'
+    subtitle4.style.fontSize = '25px'
 
 //FUNCIONES PRODUCTOS//
 

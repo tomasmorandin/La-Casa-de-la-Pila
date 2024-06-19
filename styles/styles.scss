@@ -51,66 +51,78 @@ header{
         height: $height2;
         border-bottom: 0.5px solid white;
         backdrop-filter: blur(12px);
+        padding: 30px;
+        z-index: 999;
 
-        nav{
-            ul{
-                display: flex;
-                justify-content: flex-start;
-                align-items: center;
-                vertical-align: middle;
-
-                li{
+        .container-fluid{
+            .navbar-brand{
+                img{
+                    height: 50px;
+                }
+            }
+            nav{
+                ul{
                     display: flex;
+                    justify-content: flex-start;
                     align-items: center;
-                    padding-left: 20px;
-                    list-style: none;
-                    
-                    a{
+                    vertical-align: middle;
+    
+                    li{
                         display: flex;
                         align-items: center;
-                        font-size: $fontsize3;
-                        color: $color5;
-                        margin-left: 1rem;
-                        margin-right: 50px;
-                        text-decoration: none;
-                        transition: all 0.3s;
+                        padding-left: 20px;
+                        list-style: none;
                         
-                        img{
-                            padding: 10px;
-                            padding-right: 10px;
+                        a{
+                            display: flex;
+                            align-items: center;
+                            font-size: $fontsize3;
+                            color: $color5;
+                            margin-left: 2rem;
+                            margin-right: 70px;
+                            text-decoration: none;
+                            transition: all 0.3s;
+                            
+                            img{
+                                padding: 10px;
+                                padding-right: 10px;
+                            }
                         }
-                    }
-                    
-                    a:hover {
-                        transform: scale(1.05);
-                        color: $color1;
+                        
+                        a:hover {
+                            transform: scale(1.05);
+                            color: $color1;
+                        }
                     }
                 }
             }
-        }
+        }  
     }
+
     .navbar-scrolled{
         background-color: $color6;
         transition: all 2s;
         height: 80px;
-        backdrop-filter: blur(12px);
-        nav{
-            ul{
-                li{
-                    a{
-                        color: $color1;
-                    }
-
-                    a:hover {
-                        transform: scale(1.05);
-                        color: $color4;
+        .container-fluid{
+            nav{
+                ul{
+                    li{
+                        a{
+                            color: $color1;
+                        }
+                        a:hover {
+                            transform: scale(1.05);
+                            color: $color4;
+                        }
                     }
                 }
             }
         }
-        
     }
 }
+
+
+//FOOTER//
 
 footer {
     background-color: $color4;
@@ -129,6 +141,7 @@ footer {
                 letter-spacing: 18px;      
                 font-size: $fontsize2;
                 color: $color5;
+                z-index: 9999;
             }
         }
 
@@ -142,16 +155,6 @@ footer {
     }
 }
 
-//PRODUCTO//
-#mainProducto{
-    background-image: linear-gradient(to bottom , rgb(1, 27, 51), rgba(3, 26, 81, 0.75));
-    color: $color1;
-    padding: 30px;
-
-    h4{
-        font-size: $fontsize4;
-    }
-}
 
 //INICIO//
 #mainInicio{
@@ -199,7 +202,7 @@ footer {
         display: flex;
         justify-content: space-evenly;
         padding: 10px;
-        background-color: #FFAB11;
+        background-color: $color3;
 
         .control {
             cursor: pointer;
@@ -226,6 +229,99 @@ footer {
             color: #031A51;
         }
     }
+}
+
+// Swiper cards PRODUCTOS //
+
+
+.article{
+    background-color: $color3;
+    width: 100%;
+    height: auto;
+    padding-top: 30px;
+    overflow: hidden;
+    padding-bottom: 40px;
+
+    h3{
+        padding-bottom: 20px;
+        color: $color5;
+        font-size: $fontsize3;
+    }
+
+    .swiper-container{
+        --swiper-theme-color: white;
+        width: 70%;
+        height: auto;
+        margin-left: 35px;
+
+        .swiper-wrapper{
+
+            .swiper-slide{
+                background-color: none;
+                border: 1px solid rgba(0, 0, 0, .125);
+                transition: all 0.5s;
+
+                .card-body{
+                
+                    .card-text1{
+                        color: $color5;
+                        font-weight: bold;
+                    }
+    
+                    .card-text2{
+                        color: $color5;
+                    }
+    
+                    .btn{
+                        font-weight: bold;
+                        color: $color5;
+                        padding: 0;
+                    }
+    
+                }
+            }
+
+            .swiper-slide:hover{
+                transform: scale(1.05);
+            }
+
+        }
+
+        .swiper-pagination-bullet-active {
+            background-color: white;
+        }
+
+        .swiper-pagination{
+            text-align: start;
+            position: sticky;
+        }
+
+        .swiper-pagination-bullet{
+            background-color: $color2;
+            width: 10px;
+            height: 10px;
+        }
+    }
+
+    .swiper-button-prev{
+        color: rgba(255, 255, 255, 0);
+    }
+    .swiper-button-next{
+        color: rgba(255, 255, 255, 0);
+    }
+}
+
+//PRODUCTO//
+#mainProducto{
+    background-image: linear-gradient(to bottom , rgb(1, 27, 51), rgba(3, 26, 81, 0.75));
+    color: $color1;
+    padding: 30px;
+
+    h4{
+        font-size: $fontsize4;
+        text-align: center;
+    }
+
 }
 
 //CONTACTO//
@@ -328,5 +424,9 @@ footer {
     .button_icon:hover {
         background-color: $color3;
         transform: scale(1.1);
+    }
+    #msj_error{
+        text-align: center;
+        font-weight: bold;
     }
 }

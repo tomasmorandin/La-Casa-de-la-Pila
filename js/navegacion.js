@@ -2,13 +2,15 @@
 //BARRA DE NAVEGACION HTML//
 const header = document.getElementsByTagName('header');
 const navbar = document.createElement('navbar');
+const divNav = document.createElement('div')
 const nav = document.createElement('nav');
 const ul = document.createElement ('ul');
+
 const links = ["Index", "Productos", "Contacto"];
 
 const logo = document.createElement ('img');
 const liImg = document.createElement ('li');
-const ORIGEN = document.createElement ('a');
+/*const ORIGEN = document.createElement ('a');*/
 
 const liIcon1 = document.createElement('li');
 const A_ICON1 = document.createElement ('a');
@@ -19,19 +21,30 @@ const A_ICON2 = document.createElement ('a');
 const liIcon3 = document.createElement('li');
 const A_ICON3 = document.createElement ('a');
 
+navbar.classList.add('navbar', 'navbar-expand-sm', 'navbar-light');
+divNav.classList.add ('container-fluid');
+nav.classList.add ('collapse', 'navbar-collapse');
+nav.id = 'collapsibleNavbar'
+ul.classList.add ('navbar-nav');
+
+
 header[0].appendChild(navbar);
-navbar.appendChild(nav);
+navbar.appendChild(divNav);
+divNav.innerHTML= `<a class="navbar-brand" href="#"></a>
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+<span class="navbar-toggler-icon"></span></button>`
+divNav.appendChild(nav);
 nav.appendChild(ul);
-navbar.className = 'navbar';
+
 
 //Logo marca//
+const ORIGEN = document.querySelector('.navbar-brand');
+ORIGEN.appendChild(logo);
 ORIGEN.href='/';
-ORIGEN.appendChild(logo)
 logo.src = 'img/web_LOGO AZUL.png'
 logo.alt= 'La Casa de la Pila'
-liImg.appendChild(ORIGEN);
-ul.appendChild(liImg);
-logo.style.height =  '80px'
+logo.style.height =  '50px'
+
 
 //Links//
 for (const link of links) {
@@ -39,6 +52,7 @@ for (const link of links) {
     li.innerHTML = `<a href="${link.toLocaleLowerCase()}.html">${link}</a>`
     ul.appendChild(li);
 }
+
 
 //Icono Carrito//
 A_ICON2.href="carrito.html";
@@ -131,16 +145,19 @@ A_TIKTOK.href='/';
 window.addEventListener('scroll', () => {
     if (window.scrollY >= 5) {
         navbar.classList.add('navbar-scrolled');
+        navbar.classList.add('navbar-dark');
         logo.src = 'img/web_LOGO BLANCO.png'
         logo.alt= 'La Casa de la Pila'
     } else if (window.scrollY < 5) {
         navbar.classList.remove('navbar-scrolled');
+        navbar.classList.remove('navbar-dark');
         logo.src = 'img/web_LOGO AZUL.png'
         logo.alt= 'La Casa de la Pila'
     }
 });
 
 //EVENTOS FOOTER//
+
 
 A_FACEBOOK.addEventListener('mouseover',() => {
     A_FACEBOOK.style.color = 'white';
@@ -188,3 +205,4 @@ A_WHATSSAPP.href='https://walink.co/b3100e';
 A_WHATSSAPP.className='whatsapp';
 A_WHATSSAPP.target='_blank';
 A_WHATSSAPP.ariaLabel='Whatsapp';
+A_WHATSSAPP.style.zIndex = '9999'
