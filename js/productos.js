@@ -127,7 +127,7 @@ function renderProducto(){
     listadoDeLosProductos.innerHTML = '';
     
     const getData1 = async () => {
-    const res = await fetch('/productos.json');
+    const res = await fetch('productos.json');
     const products = await res.json();
     const product = await products
 
