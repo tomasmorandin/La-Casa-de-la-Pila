@@ -5,7 +5,7 @@ const navbar = document.createElement('navbar');
 const divNav = document.createElement('div')
 const nav = document.createElement('nav');
 const ul = document.createElement ('ul');
-const links = ["Inicio", "Productos", "Contacto"];
+const links = ["Index", "Productos", "Contacto"];
 const logo = document.createElement ('img');
 const liImg = document.createElement ('li');
 
