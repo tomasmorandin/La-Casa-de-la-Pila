@@ -222,7 +222,7 @@ function renderCarrito(){
         const vaciar = document.getElementById('vaciar');
         vaciar.addEventListener('click', () => {
             Swal.fire({
-                     position: "top-end",
+                     position: "center",
                      icon: "info",
                      title: "Carrito vacio",
                      showConfirmButton: false,
