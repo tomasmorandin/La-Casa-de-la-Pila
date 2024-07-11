@@ -16,7 +16,7 @@ let contador = 0;
 formulario.addEventListener('submit', (e) => {
     e.preventDefault();
     Swal.fire({
-    position: "top-end",
+    position: "center",
     icon: "success",
     title: `Gracias ${nombreForm.value} por suscribirte!`,
     showConfirmButton: false,
