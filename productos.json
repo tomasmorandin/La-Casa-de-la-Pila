@@ -1,0 +1,155 @@
+
+[
+    {
+        "codigo":1654, 
+        "nombre": "Pila 9V X 1 Duracell", 
+        "tipo": "Alcalina", 
+        "marca":"Duracell", 
+        "stock":195, 
+        "precio":7600,
+        "imagen": "https://www.lacasadelapila.com.ar/image/cache/data/9vduracell-500x500.jpg"
+
+    },
+
+    {
+        "codigo":7, 
+        "nombre": "Pila AAA X 1 Energizer Max", 
+        "tipo": "Alcalinas", 
+        "marca":"Energizer", 
+        "stock":113, 
+        "precio":1620,
+        "imagen": "https://www.lacasadelapila.com.ar/image/cache/data/lr03en1-500x500.jpg"
+    },
+
+    {
+        "codigo":2, 
+        "nombre": "Pila AA X 2 Energizer", 
+        "tipo": "Alcalinas", 
+        "marca":"Energizer", 
+        "stock":110, 
+        "precio":3300,
+        "imagen": "https://www.lacasadelapila.com.ar/image/cache/data/lr6en2-500x500.jpg"
+    },
+
+    {
+        "codigo":2657, 
+        "nombre": "Pila AA X2 Safety Energy", 
+        "tipo": "Recargables", 
+        "marca":"Safety Energy", 
+        "stock":32, 
+        "precio":12070,
+        "imagen": "https://www.lacasadelapila.com.ar/image/cache/data/aasafet-500x500.jpg"
+    },
+
+    {
+        "codigo":4347, 
+        "nombre": "Pila AAA X2 Duracell 900MAH", 
+        "tipo": "Recargables", 
+        "marca":"Duracell", 
+        "stock":15, 
+        "precio":7200,
+        "imagen": "https://www.lacasadelapila.com.ar/image/cache/data/duaaa902-500x500.jpg"
+    },
+
+    {
+        "codigo":4822, 
+        "nombre": "Pila AAA X2 Multilazer", 
+        "tipo": "Recargables", 
+        "marca":"Multilazer", 
+        "stock":27, 
+        "precio":6392,
+        "imagen": "https://www.lacasadelapila.com.ar/image/cache/data/muaaa1002-500x500.jpg"
+    },
+
+    {
+        "codigo":4643, 
+        "nombre": "Pila AA X 4 VINNIC", 
+        "tipo": "Recargables", 
+        "marca":"VINNIC", 
+        "stock":286, 
+        "precio":2050,
+        "imagen": "https://www.lacasadelapila.com.ar/image/cache/data/a9vvirec-500x500.jpg"
+    },
+
+    {
+        "codigo":15, 
+        "nombre": "Pila 9V X 1 EUROENERGY", 
+        "tipo": "Carbon", 
+        "marca":"EUROENERGY",
+        "stock":47, 
+        "precio":2650,
+        "imagen": "https://www.lacasadelapila.com.ar/image/cache/data/lr6eu1-500x500.jpg"
+    },
+
+    {   
+        "codigo":4541, 
+        "nombre": "Pila 9V X 1 EVEREADY", 
+        "tipo": "Carbon", 
+        "marca":"EVEREADY", 
+        "stock":20, 
+        "precio":3600,
+        "imagen": "https://www.lacasadelapila.com.ar/image/cache/data/6f22ev-500x500.jpg"
+    },
+
+    {   
+        "codigo":33, 
+        "nombre": "Pila C X 2 EVEREADY", 
+        "tipo": "Carbon", 
+        "marca":"EVEREADY", 
+        "stock":31, 
+        "precio":4800,
+        "imagen": "https://www.lacasadelapila.com.ar/image/cache/data/cr14ev2-500x500.jpg"
+    },
+
+    {   
+        "codigo":4543, 
+        "nombre": "Pila AA X 4 VINNIC", 
+        "tipo": "Carbon", 
+        "marca":"VINNIC", 
+        "stock":286, 
+        "precio":2050,
+        "imagen": "https://www.lacasadelapila.com.ar/image/cache/data/cr6vi4-500x500.jpg"
+    },
+
+    {   
+        "codigo":3363, 
+        "nombre": "Bat. Cel. SAMSUNG YOUNG 2", 
+        "tipo": "2 3.7V /1300MAH / LITIO-ION", 
+        "marca":"Samsung", 
+        "stock":10, 
+        "precio":19200,
+        "imagen": "https://www.lacasadelapila.com.ar/image/cache/data/smg130sl-500x500.jpg"
+    },
+
+    {   
+        "codigo":3952, 
+        "nombre": "Bat. Cel.  IPHONE 5S", 
+        "tipo": "Li-Polymer 1500mAh", 
+        "marca":"Iphone", 
+        "stock":15, 
+        "precio": 31400,
+        "imagen": "https://www.lacasadelapila.com.ar/image/cache/data/cs-iph510sl-5-500x500.jpg"
+    },
+
+    {   
+        "codigo": 4701, 
+        "nombre": "Bat. Cel.  MOTO G6", 
+        "tipo": "3.85V / 4000MAH / LITIO-ION", 
+        "marca":"Motorola", 
+        "stock":10, 
+        "precio":12300,
+        "imagen": "https://www.lacasadelapila.com.ar/image/cache/data/mob855fro-500x500.jpg"
+    },
+
+    {   
+        "codigo": 3392, 
+        "nombre": "Bat. Cel. NOKIA 435", 
+        "tipo": "3.7V / 1300MAH Li-ion", 
+        "marca":"LG", 
+        "stock":6, 
+        "precio": 18300,
+        "imagen": "https://www.lacasadelapila.com.ar/image/cache/data/cs-nk435sl-5-500x500.jpg"
+    }
+]
+
+

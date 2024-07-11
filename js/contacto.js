@@ -12,10 +12,23 @@ mainContacto.appendChild(divContacto)
 const inputs = document.getElementsByClassName('input')
 let contador = 0;
 
+
+formulario.addEventListener('submit', (e) => {
+    e.preventDefault();
+    Swal.fire({
+    position: "top-end",
+    icon: "success",
+    title: `Gracias ${nombreForm.value} por suscribirte!`,
+    showConfirmButton: false,
+    timer: 1500,
+    timerProgressBar: true,
+ });
+});
+
 formulario.addEventListener ('submit', (e) => {
     e.preventDefault();
-divContacto.appendChild(textoContacto)
-textoContacto.innerHTML = `Gracias ${nombreForm.value} por suscribirte!`
+    divContacto.appendChild(textoContacto)
+    textoContacto.innerHTML = `Gracias ${nombreForm.value} por suscribirte!`
 });
 
 for (let i = 0; i < inputs.length; i++) {

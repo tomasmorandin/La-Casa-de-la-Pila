@@ -1,27 +1,16 @@
 
-//BARRA DE NAVEGACION HTML//
+//VARIABLES BARRA DE NAVEGACION HTML//
 const header = document.getElementsByTagName('header');
 const navbar = document.createElement('navbar');
 const divNav = document.createElement('div')
 const nav = document.createElement('nav');
 const ul = document.createElement ('ul');
-
-const links = ["Index", "Productos", "Contacto"];
-
+const links = ["Inicio", "Productos", "Contacto"];
 const logo = document.createElement ('img');
 const liImg = document.createElement ('li');
-/*const ORIGEN = document.createElement ('a');*/
 
-const liIcon1 = document.createElement('li');
-const A_ICON1 = document.createElement ('a');
-
-const liIcon2 = document.createElement('li');
-const A_ICON2 = document.createElement ('a');
-
-const liIcon3 = document.createElement('li');
-const A_ICON3 = document.createElement ('a');
-
-navbar.classList.add('navbar', 'navbar-expand-sm', 'navbar-light');
+//CLASES BARRA DE NAVEGACION HTML//
+navbar.classList.add('navbar', 'navbar-expand-lg', 'navbar-light');
 divNav.classList.add ('container-fluid');
 nav.classList.add ('collapse', 'navbar-collapse');
 nav.id = 'collapsibleNavbar'
@@ -40,7 +29,7 @@ nav.appendChild(ul);
 //Logo marca//
 const ORIGEN = document.querySelector('.navbar-brand');
 ORIGEN.appendChild(logo);
-ORIGEN.href='/';
+ORIGEN.href="#";
 logo.src = 'img/web_LOGO AZUL.png'
 logo.alt= 'La Casa de la Pila'
 logo.style.height =  '50px'
@@ -53,30 +42,21 @@ for (const link of links) {
     ul.appendChild(li);
 }
 
+//Icons//
+const icons = ['<i class="fa-solid fa-cart-shopping"></i>', '<i class="fa-regular fa-heart"></i>','<i class="fa-solid fa-magnifying-glass"></i>'];
 
-//Icono Carrito//
-A_ICON2.href="carrito.html";
-ul.appendChild(liIcon2);
-liIcon2.appendChild(A_ICON2);
-A_ICON2.innerHTML='<i class="fa-solid fa-cart-shopping"></i>';
-A_ICON2.style.height = '50px'
+for (const icon of icons) {
+    const liIcon1 = document.createElement('li');
+    const A_ICON1 = document.createElement ('a');
+    A_ICON1.innerHTML=`${icon}`
+    A_ICON1.style.height = '50px'
+    A_ICON1.href="#";
+    ul.appendChild(liIcon1);
+    liIcon1.appendChild(A_ICON1);
+}
 
-//Icono Favoritos//
-A_ICON1.href='/';
-ul.appendChild(liIcon1);
-liIcon1.appendChild(A_ICON1);
-A_ICON1.innerHTML='<i class="fa-regular fa-heart"></i>';
-A_ICON1.style.height = '50px'
-
-//Icono Buscar//
-A_ICON3.href='/';
-ul.appendChild(liIcon3);
-liIcon3.appendChild(A_ICON3);
-A_ICON3.innerHTML='<i class="fa-solid fa-magnifying-glass"></i>';
-A_ICON3.style.height = '50px'
 
 //FOOTER HTML//
-
 const footer = document.getElementsByTagName ('footer');
 const divConteinerFluid = document.createElement ('div')
 const divRow = document.createElement ('div')
@@ -105,7 +85,7 @@ divLogo.classList.add ('col-sm-4','text-sm-start');
 //Logo y copyright//
 divRow.appendChild(divLogo);
 divLogo.appendChild(A_LOGO);
-A_LOGO.href='/';
+A_LOGO.href='#';
 A_LOGO.appendChild(logo2)
 logo2.src = 'img/web_LOGO AZUL.png'
 logo2.alt= 'La Casa de la Pila'
@@ -136,53 +116,39 @@ divRedes.appendChild(A_TIKTOK);
 A_INSTAGRAM.innerHTML = '<i class="fa-brands fa-instagram"></i>'
 A_INSTAGRAM.href='https://www.instagram.com/lacasadelapila/?hl=es-la';
 A_FACEBOOK.innerHTML = '<i class="fa-brands fa-facebook"></i>'
-A_FACEBOOK.href='/';
+A_FACEBOOK.href='#';
 A_TIKTOK.innerHTML = '<i class="fa-brands fa-tiktok"></i>'
-A_TIKTOK.href='/';
+A_TIKTOK.href='#';
 
 
 //EVENTOS BARRA DE NAVEGACION//
 window.addEventListener('scroll', () => {
-    if (window.scrollY >= 5) {
-        navbar.classList.add('navbar-scrolled');
-        navbar.classList.add('navbar-dark');
+    window.scrollY >= 5 ? eventoAbarra() : eventoBbarra()
+    function eventoAbarra()  {
+        navbar.classList.add('navbar-scrolled', 'navbar-dark');
         logo.src = 'img/web_LOGO BLANCO.png'
         logo.alt= 'La Casa de la Pila'
-    } else if (window.scrollY < 5) {
-        navbar.classList.remove('navbar-scrolled');
-        navbar.classList.remove('navbar-dark');
+    };
+    function eventoBbarra() {
+        navbar.classList.remove('navbar-scrolled', 'navbar-dark' );
         logo.src = 'img/web_LOGO AZUL.png'
         logo.alt= 'La Casa de la Pila'
-    }
+    };
 });
 
-//EVENTOS FOOTER//
+//EVENTO REDES SOCIALES//
+const sociales = [A_FACEBOOK, A_INSTAGRAM, A_TIKTOK];
 
-
-A_FACEBOOK.addEventListener('mouseover',() => {
-    A_FACEBOOK.style.color = 'white';
-    A_FACEBOOK.style.transition ='all 0.6s';
-});
-A_FACEBOOK.addEventListener('mouseout',() => {
-    A_FACEBOOK.style.color = '#031A51';
-    A_FACEBOOK.style.transition ='all 0.6s';
-});
-A_INSTAGRAM.addEventListener('mouseover',() => {
-    A_INSTAGRAM.style.color = 'white';
-    A_INSTAGRAM.style.transition ='all 0.6s';
-});
-A_INSTAGRAM.addEventListener('mouseout',() => {
-    A_INSTAGRAM.style.color = '#031A51';
-    A_INSTAGRAM.style.transition ='all 0.6s';
-});
-A_TIKTOK.addEventListener('mouseover',() => {
-    A_TIKTOK.style.color = 'white';
-    A_TIKTOK.style.transition ='all 0.6s';
-});
-A_TIKTOK.addEventListener('mouseout',() => {
-    A_TIKTOK.style.color = '#031A51';
-    A_TIKTOK.style.transition ='all 0.6s';
-});
+for (const icon of sociales) {
+    icon.addEventListener('mouseover',() => {
+        icon.style.color = 'white';
+        icon.style.transition ='all 0.6s';
+    });
+    icon.addEventListener('mouseout',() => {
+        icon.style.color = '#031A51';
+        icon.style.transition ='all 0.6s';
+    });
+}
 
 
 //EVENTOS WHATSAPP//

@@ -1,5 +1,4 @@
 
-
 const galleryContainer = document.querySelector('.slide');
 const prev = document.querySelector('.control.icon-prev');
 const next = document.querySelector('.control.icon-next');
@@ -14,12 +13,15 @@ function createGallery() {
         image.src = `img/${img}.jpg`;
         image.alt = `img ${index + 1}`;
         li.appendChild(image);
-        if (index === 0) {
-            li.classList.add('active');
-        }
+        index === 0 && li.classList.add('active')
         galleryContainer.appendChild(li);
     });
 }
+
+setInterval(()=>{
+  currentIndex = (currentIndex + 1) % imagenes.length;
+  showImage(currentIndex);
+}, 3000)
 
 // Función para mostrar la imagen en el índice especificado//
 function showImage(index) {
@@ -31,8 +33,8 @@ function showImage(index) {
 
 // Función para mostrar la siguiente imagen//
 function showNextImage() {
-    currentIndex = (currentIndex + 1) % imagenes.length;
-    showImage(currentIndex);
+  currentIndex = (currentIndex + 1) % imagenes.length;
+  showImage(currentIndex);
 }
 
 // Función para mostrar la imagen anterior//
@@ -51,8 +53,6 @@ showImage(currentIndex);
 
 
 //SWIPER PRODUCTOS
-
-
 var swiper = new Swiper('.swiper-container', {
     slidesPerView: 1,
     spaceBetween: 30,
@@ -88,6 +88,5 @@ AOS.init();
 /*WOW*/ 
 
 new WOW().init();
-
 
 

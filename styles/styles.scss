@@ -233,7 +233,6 @@ footer {
 
 // Swiper cards PRODUCTOS //
 
-
 .article{
     background-color: $color3;
     width: 100%;
@@ -377,10 +376,9 @@ footer {
    
 };
 
-//CARRITO//
+//PRODUCTOS//
 #mainCarrito{
     background-image: linear-gradient(to bottom , rgb(1, 27, 51), rgba(3, 26, 81, 0.75));
-    color: $color1;
     padding: 30px;
     width: auto;
 
@@ -390,19 +388,38 @@ footer {
         background-color: $color3;
     }
     
-    #cart,
-    #cart-list {
+    #vaciar,
+    #procesar {
+        background-color: $color4;
+        padding: 8px;
+        height: 35px;
+        width: 340px;
+        border: none;
+        border-radius: .25rem;
+        cursor: pointer;
+        transition: all 1s;
+        line-height: 0px;
+        margin-top: 20px;
+    }
+
+    #procesar:hover {
+        background-color: $color3;
+        transform: scale(1.1);
+    }
+
+    #cart{
+        color: $color1;
         display: flex;
         justify-content: center;
         flex-direction: column;
         align-items: center;
-        width: 360px;
         margin-left: auto;
         margin-right: auto;
         gap: 1rem;
         margin-top: 2rem;
         margin-bottom: 2rem;
-        
+        width: 400px;
+
         div{
             display: flex;
             justify-content: space-between;
@@ -410,23 +427,89 @@ footer {
         }
     }
 
+    #cart-list {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        gap: 2rem;
+        padding: 40px;
+
+        .card{
+            .card-img-top{
+                width: auto;
+                padding: 30px;
+            }
+                .card-body{
+                
+                    .card-text1{
+                        color: $color5;
+                        font-weight: bold;
+                    }
+
+                    .card-text2{
+                        color: $color5;
+                    }
+                }
+            }
+        
+    }
+
     .button_icon {
         background-color: $color4;
         padding: 8px;
+        height: 35px;
         border: none;
         border-radius: .25rem;
         cursor: pointer;
-        margin: .25rem;
-        line-height: 2;
         transition: all 1s;
+        line-height: 0;
+        margin-bottom: 15px;
     }
     
     .button_icon:hover {
         background-color: $color3;
         transform: scale(1.1);
     }
-    #msj_error{
-        text-align: center;
-        font-weight: bold;
-    }
+}
+
+.swal2-title{
+    font-family: "Barlow", sans-serif !important;
+    color: $color5 !important;
+    font-size: 18px !important;
+}
+
+div:where(.swal2-container) .swal2-html-container {
+    color: $color4!important;
+    font-size: 25px!important;
+    
+}
+
+div:where(.swal2-container) div:where(.swal2-popup) {
+    width: 18em !important;
+    font-family: "Barlow", sans-serif !important;
+}
+
+div:where(.swal2-container) button:where(.swal2-styled).swal2-confirm {
+    background-color: $color4 !important;
+    color: $color5 !important;
+    font-family: "Barlow", sans-serif !important;
+    
+}
+
+div:where(.swal2-container) button:where(.swal2-styled).swal2-cancel {
+    background-color: $color4 !important;
+    color: $color5 !important;
+    font-family: "Barlow", sans-serif !important;
+}
+
+div:where(.swal2-container) button:where(.swal2-styled).swal2-deny {
+    background-color: $color4 !important;
+    color: $color5 !important;
+    font-family: "Barlow", sans-serif !important;
+}
+
+div:where(.swal2-icon).swal2-info {
+    border-color: red !important;
+    color: red !important;
 }
