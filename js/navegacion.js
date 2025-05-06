@@ -13,14 +13,14 @@ const liImg = document.createElement ('li');
 navbar.classList.add('navbar', 'navbar-expand-lg', 'navbar-light');
 divNav.classList.add ('container-fluid');
 nav.classList.add ('collapse', 'navbar-collapse');
-nav.id = 'collapsibleNavbar'
+nav.id = '#collapsibleNavbar'
 ul.classList.add ('navbar-nav');
 
 
 header[0].appendChild(navbar);
 navbar.appendChild(divNav);
 divNav.innerHTML= `<a class="navbar-brand" href="#"></a>
-<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="collapsibleNavbar">
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
 <span class="navbar-toggler-icon"></span></button>`
 divNav.appendChild(nav);
 nav.appendChild(ul);
