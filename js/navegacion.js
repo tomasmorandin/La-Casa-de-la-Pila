@@ -20,7 +20,7 @@ ul.classList.add ('navbar-nav');
 header[0].appendChild(navbar);
 navbar.appendChild(divNav);
 divNav.innerHTML= `<a class="navbar-brand" href="#"></a>
-<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="collapsibleNavbar">
 <span class="navbar-toggler-icon"></span></button>`
 divNav.appendChild(nav);
 nav.appendChild(ul);
