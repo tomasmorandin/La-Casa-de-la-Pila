@@ -13,7 +13,7 @@ const liImg = document.createElement ('li');
 navbar.classList.add('navbar', 'navbar-expand-lg', 'navbar-light');
 divNav.classList.add ('container-fluid');
 nav.classList.add ('collapse', 'navbar-collapse');
-nav.id = '#collapsibleNavbar'
+nav.id = 'collapsibleNavbar'
 ul.classList.add ('navbar-nav');
 
 
